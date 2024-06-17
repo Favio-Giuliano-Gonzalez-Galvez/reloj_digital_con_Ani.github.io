@@ -1,0 +1,82 @@
+body{
+    background: #42275a; 
+    background: -webkit-linear-gradient(to right, #572851, rgb(36, 2, 70));
+    background: linear-gradient(to right, #5a2853, #180130); 
+    user-select: none;
+    text-align: center;
+}
+
+body .reloj{
+    color: rgb(187, 185, 185);
+    display: inline-flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+}
+
+#presentacion{
+    display: none;
+}
+
+.horeros{
+    padding: 15px;
+}
+
+@media (max-width: 450px){
+    body .reloj{
+        color: rgb(187, 185, 185);
+        display:block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 70px;
+    }
+
+    .horeros{
+        margin: 5px;
+    }
+
+    .puntitos{
+        text-align: center;
+        display: none;
+    }
+
+    #presentacion{
+        display:block;
+    }
+
+    #boton{
+        border-radius: 7px;
+        color: #290550;
+        background-color: #b58bda;
+        font-size: 15px;
+        padding: 7px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border: solid 2px white;
+
+        position: absolute;
+        left: 50%;
+        top: 85%;
+        transform: translate(-50%, -50%);
+    }
+
+    #texto{
+        color: white;
+        background-color: #180130;
+        border: solid 2px white;
+        border-radius: 8px;
+        padding: 20px;
+        font-family:'Courier New', Courier, monospace;
+        font-size: 18px;
+        display: none;
+
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
